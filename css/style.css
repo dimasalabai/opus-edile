@@ -2,6 +2,7 @@
 /* -------- RESET -------- */
 /* ---------------------- */
 @import url("reset.css");
+@import url("siamo.css");
 :root {
 	--main-text: #2d2727;
 	--second-clr: #fff;
@@ -28,6 +29,10 @@ body {
 /* ---------------------- */
 .page {
 	flex: 1 1 auto;
+}
+
+.active__page {
+	color: #ff5200;
 }
 
 /* ----Header------------ */
@@ -110,11 +115,7 @@ body {
 		position: relative;
 		z-index: 30;
 	}
-	.icon-menu:active::before,
-	.icon-menu:active::after,
-	.icon-menu:active span {
-		background-color: #fdc4a9;
-	}
+
 	.icon-menu span,
 	.icon-menu::before,
 	.icon-menu::after {
@@ -125,6 +126,11 @@ body {
 		height: 2px;
 		background-color: #fff;
 		transition: all 0.3s ease 0s;
+	}
+	.icon-menu:active::before,
+	.icon-menu:active::after,
+	.icon-menu:active span {
+		background-color: #fdc4a9;
 	}
 	.icon-menu::before {
 		top: 0;
@@ -311,8 +317,7 @@ body {
 }
 
 /* ----Titolo------------------ */
-.page__titolo {
-}
+
 .titolo {
 	border-bottom: 2px solid #ff5200;
 }
@@ -333,8 +338,6 @@ body {
 	}
 }
 
-.titolo__content {
-}
 .titolo__info {
 	margin-bottom: 50px;
 }
@@ -344,8 +347,7 @@ body {
 	letter-spacing: 0.788px;
 	margin-bottom: 16px;
 }
-.text {
-}
+
 .titolo__title {
 	margin-bottom: 27px;
 }
@@ -375,8 +377,7 @@ body {
 		font-size: 40px;
 	}
 }
-.titolo__button {
-}
+
 .button {
 	display: flex;
 	align-items: center;
@@ -425,19 +426,15 @@ body {
 	}
 }
 /* ----Projects--------------- */
-.page__projects {
-}
+
 .projects {
 	padding: 93px 0 100px 0;
 }
-.projects__container {
-}
+
 .projects__head {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 70px;
-}
-.projects__title {
 }
 
 @media (max-width: 767.98px) {
@@ -452,29 +449,15 @@ body {
 	}
 }
 
-.title {
-}
 .projects__button {
 	margin-top: 8px;
 	min-width: 190px;
 }
-.button {
-}
-.btn-arrow {
-}
 
 /* =====Slider===================== */
-.project__slider {
-}
+
 .slider-project {
 	position: relative;
-}
-
-.slider-project__wrapper {
-}
-.swiper-wrapper {
-}
-.slider-project__slide {
 }
 
 /* Для автоматичного відображення кількості слайдів */
@@ -560,8 +543,7 @@ img {
 }
 
 /* ----Services------------------- */
-.page__services {
-}
+
 .services {
 	border-top: 1px solid #d7bebe;
 }
@@ -580,14 +562,12 @@ img {
 	padding-top: 122px;
 	padding-right: 5px;
 }
-.info-services {
-}
+
 .info-services__text {
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
-.text {
-}
+
 .info-services__title {
 	text-transform: uppercase;
 	margin-bottom: 34px;
@@ -601,18 +581,13 @@ img {
 		font-weight: 500;
 	}
 }
-.title {
+
+@media (max-width: 424.98px) {
+	.info-services__title {
+		font-size: 32px;
+	}
 }
-.info-services__button {
-}
-.button {
-}
-.btn-arrow {
-}
-.services__cards {
-}
-.cards-services {
-}
+
 .cards-services__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -645,8 +620,7 @@ img {
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
-.cards-services__text {
-}
+
 @media (max-width: 767.98px) {
 	.cards-services__list {
 		flex-direction: column;
@@ -684,14 +658,7 @@ img {
 	font-size: 25px;
 	margin-bottom: 64px;
 }
-.footer__nav {
-}
-.menu-footer {
-}
-.menu-footer__body {
-}
-.menu-footer__list {
-}
+
 .menu-footer__item:not(:last-child) {
 	margin-bottom: 33px;
 }
@@ -703,17 +670,12 @@ img {
 .menu-footer__link:hover {
 	color: #ff5200;
 }
-.menu__item {
-}
 
-.footer__contacts {
-}
 .contacts-footer {
 	padding-top: 80px;
 	padding-left: 116px;
 }
-.contacts-footer__socials {
-}
+
 .socials-contacts {
 	display: flex;
 	column-gap: 15px;
@@ -725,21 +687,12 @@ img {
 .social-contacts__item:hover .social-contacts__link {
 	fill: #ff5200;
 }
-.social-contacts__link {
-}
-.social-icon {
-}
+
 .contacts-footer__title {
 	font-size: 14px;
 	line-height: 1.4;
 	margin-bottom: 39px;
 	text-transform: uppercase;
-}
-.contacts-footer__address {
-}
-.address-contacts {
-}
-.address-contacts__list {
 }
 
 .address-contacts__item {
@@ -750,8 +703,6 @@ img {
 	max-width: 183px;
 	line-height: 1.87;
 	margin-bottom: 78px;
-}
-.address-contacts__link {
 }
 
 @media (max-width: 998.98px) {
