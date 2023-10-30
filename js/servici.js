@@ -11,8 +11,7 @@ new Swiper(".slider-serv-cover", {
 		enable: true,
 		onlyInViewport: true,
 	},
-	// Кількість слайдів для показу
-	slidesPerView: 2.5,
+
 	// Відступи між слайдами
 	spaceBetween: 0,
 	// Безкінечний слайдер
@@ -23,8 +22,23 @@ new Swiper(".slider-serv-cover", {
 	// 	delay: 300,
 	// },
 	// Швидкість прокрутки слайдера
-	speed: 600,
 
+	speed: 600,
+	// Кількість слайдів для показу
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		425: {
+			slidesPerView: 1.4,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		1024: {
+			slidesPerView: 2.2,
+		},
+	},
 	/*// Зміна прозорості
 		effect: "fade",
 		fadeEffect: {
