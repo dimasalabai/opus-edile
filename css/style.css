@@ -3,6 +3,8 @@
 /* ---------------------- */
 @import url("reset.css");
 @import url("siamo.css");
+@import url("sostenibilita.css");
+@import url("servici.css");
 :root {
 	--main-text: #2d2727;
 	--second-clr: #fff;
@@ -82,18 +84,13 @@ body {
 		font-size: 20px;
 	}
 }
-.header__menu {
-}
-.menu {
-}
 
 .menu__list {
 	display: flex;
 	column-gap: 40px;
 	flex-wrap: wrap;
 }
-.menu__item {
-}
+
 .menu__link {
 	display: block;
 	font-weight: 700;
@@ -477,14 +474,17 @@ body {
 	position: relative;
 }
 
+.slider-project__image:hover .item-gallery__description {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
 @media (max-width: 424.98px) {
 	.slider-project__image {
 		height: 300px;
 	}
 }
-img {
-	display: block;
-}
+
 .slider-project__image img {
 	max-width: 100%;
 	height: 100%;
@@ -528,9 +528,14 @@ img {
 	left: 20px;
 	transform: rotate(180deg);
 }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	transition: all 0.3s ease;
+}
 .swiper-button-next:hover.swiper-button-next::after,
 .swiper-button-prev:hover.swiper-button-prev::after {
-	background-color: #fff;
+	background-color: #dedede;
 }
 
 @media (max-width: 424.98px) {

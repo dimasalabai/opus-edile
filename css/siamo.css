@@ -58,6 +58,9 @@
 	.menu-open .menu__link-chi {
 		color: #fff;
 	}
+	.menu-open .menu__link-chi.active__page {
+		color: #ff5200;
+	}
 }
 
 /* -------About--------------------- */

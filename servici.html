@@ -3,7 +3,505 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
 		<title>Servizi</title>
 	</head>
-	<body></body>
+	<body>
+		<header class="header-chi">
+			<div class="header__container">
+				<a href="#" class="header__logo header__logo-chi">Opus Edile</a>
+				<nav class="header__menu menu menu-chi">
+					<div class="menu__body menu__body-chi">
+						<ul class="menu__list menu__list-chi">
+							<li class="menu__item menu__item-chi">
+								<a href="./index.html" class="menu__link menu__link-chi"
+									>HOME</a
+								>
+							</li>
+							<li class="menu__item menu__item-chi">
+								<a href="./chi-siamo.html" class="menu__link menu__link-chi"
+									>CHI SIAMO</a
+								>
+							</li>
+							<li class="menu__item menu__item-chi active__page">
+								<a
+									href="./servici.html"
+									class="menu__link menu__link-chi active__page"
+									>SERVIZI</a
+								>
+							</li>
+							<li class="menu__item menu__item-chi">
+								<a href="./sostenibilita.html" class="menu__link menu__link-chi"
+									>SOSTENIBILITA'</a
+								>
+							</li>
+							<li class="menu__item menu__item-chi">
+								<a href="#contattaci" class="menu__link menu__link-chi"
+									>CONTATTACI</a
+								>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<button class="icon-menu icon-menu-chi" type="button">
+					<span></span>
+				</button>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__head head">
+				<div class="head__container">
+					<div class="head__subtitle text">I NOSTRI SERVIZI</div>
+					<div class="head__title servici-title">
+						"TUTTO QUELLO DI CUI HAI BISOGNO"
+					</div>
+				</div>
+			</section>
+			<section class="page__services-cotac services-cotac">
+				<div class="sservices-cotac__container">
+					<div class="services-cotac__cards cards-services-cotac">
+						<ul class="cards-services-cotac__list">
+							<!-- 1 -->
+							<li class="cards-services-cotac__item">
+								<svg class="cards-services-cotac__icon" width="44" height="44">
+									<use href="./img/icons/symbol-defs.svg#icon-commercial"></use>
+								</svg>
+								<h3 class="cards-services-cotac__title text">COMMERCIAL</h3>
+								<p class="cards-services-cotac__text text">
+									Describe the service and how customers or clients can benefit
+									from it. It’s an opportunity to add a short description with
+									relevant details, like pricing, duration and how to book.
+								</p>
+							</li>
+							<!-- 2 -->
+							<li class="cards-services-cotac__item">
+								<svg class="cards-services-cotac__icon" width="44" height="44">
+									<use
+										href="./img/icons/symbol-defs.svg#icon-residential"
+									></use>
+								</svg>
+								<h3 class="cards-services-cotac__title text">RESIDENTIAL</h3>
+								<p class="cards-services-cotac__text text">
+									Describe the service and how customers or clients can benefit
+									from it. It’s an opportunity to add a short description with
+									relevant details, like pricing, duration and how to book.
+								</p>
+							</li>
+							<!-- 3 -->
+							<li class="cards-services-cotac__item">
+								<svg class="cards-services-cotac__icon" width="44" height="44">
+									<use
+										href="./img/icons/symbol-defs.svg#icon-construction"
+									></use>
+								</svg>
+								<h3 class="cards-services-cotac__title text">
+									PRE-CONSTRUCTION
+								</h3>
+								<p class="cards-services-cotac__text text">
+									Describe the service and how customers or clients can benefit
+									from it. It’s an opportunity to add a short description with
+									relevant details, like pricing, duration and how to book.
+								</p>
+							</li>
+							<!-- 4 -->
+							<li class="cards-services-cotac__item">
+								<svg class="cards-services-cotac__icon" width="44" height="44">
+									<use href="./img/icons/symbol-defs.svg#icon-management"></use>
+								</svg>
+								<h3 class="cards-services-cotac__title text">
+									SITE MANAGEMENT
+								</h3>
+								<p class="cards-services-cotac__text text">
+									Describe the service and how customers or clients can benefit
+									from it. It’s an opportunity to add a short description with
+									relevant details, like pricing, duration and how to book.
+								</p>
+							</li>
+							<!-- 5 -->
+							<li class="cards-services-cotac__item">
+								<svg
+									preserveAspectRatio="xMidYMid meet"
+									data-bbox="37.591 37.318 124.819 125.364"
+									viewBox="37.591 37.318 124.819 125.364"
+									height="44"
+									width="44"
+									xmlns="http://www.w3.org/2000/svg"
+									data-type="color"
+									role="presentation"
+									aria-hidden="true"
+									aria-label=""
+									class="cards-services-cotac__icon"
+								>
+									<defs>
+										<style>
+											#comp-lj5dfs4c__item-lj5dd0tp svg [data-color="1"] {
+												fill: #2d2727;
+											}
+										</style>
+									</defs>
+									<g>
+										<path
+											d="M126.847 85.137c.382.38.88.569 1.38.568a1.942 1.942 0 0 0 1.377-.575l32.238-32.398a1.947 1.947 0 0 0-.007-2.756l-12.151-12.09a1.947 1.947 0 0 0-2.756.007l-32.236 32.4a1.947 1.947 0 0 0 .007 2.756l4.694 4.67-7.709 7.747-31.102-15.454c-.024-.012-.051-.009-.075-.02-.127-.057-.258-.076-.392-.105-.117-.025-.23-.063-.347-.067-.118-.003-.23.028-.347.046-.131.02-.262.03-.386.076-.099.037-.183.103-.275.156-.129.074-.257.142-.367.245-.018.017-.042.022-.06.04-33.776 33.944-40.798 67.872-40.742 90.355a1.95 1.95 0 0 0 1.954 1.944c22.483-.056 56.375-7.249 90.149-41.195.018-.018.023-.043.041-.061.098-.107.163-.23.234-.354.057-.098.126-.188.164-.293.043-.118.051-.243.071-.367.019-.123.051-.24.047-.364-.004-.116-.043-.227-.068-.342-.029-.135-.05-.267-.108-.394-.011-.024-.008-.051-.02-.075l-15.609-31.022 7.709-7.747 4.692 4.669zm-.923 34.566c-31.525 31.176-62.898 38.574-84.398 39.036.354-21.502 7.594-52.912 38.612-84.593l28.647 14.234-14.21 14.281a1.947 1.947 0 0 0 1.387 3.324 1.942 1.942 0 0 0 1.377-.575l14.21-14.28 14.375 28.573zm22.392-77.68 9.388 9.341-29.488 29.635-9.386-9.339 29.486-29.637z"
+											fill="#2d2727"
+											data-color="1"
+										></path>
+									</g>
+								</svg>
+								<h3 class="cards-services-cotac__title text">
+									SPECIAL PROJECTS
+								</h3>
+								<p class="cards-services-cotac__text text">
+									Describe the service and how customers or clients can benefit
+									from it. It’s an opportunity to add a short description with
+									relevant details, like pricing, duration and how to book.
+								</p>
+							</li>
+							<!-- 6 -->
+							<li class="cards-services-cotac__item">
+								<svg
+									preserveAspectRatio="xMidYMid meet"
+									data-bbox="26.016 32.007 147.97 135.986"
+									viewBox="26.016 32.007 147.97 135.986"
+									height="44"
+									width="44"
+									xmlns="http://www.w3.org/2000/svg"
+									data-type="color"
+									role="presentation"
+									aria-hidden="true"
+									aria-label=""
+									class="cards-services-cotac__icon"
+								>
+									<defs>
+										<style>
+											#comp-lj5dfs4c__item-lj5dd525 svg [data-color="1"] {
+												fill: #2d2727;
+											}
+										</style>
+									</defs>
+									<g>
+										<path
+											d="m103.666 104.3-3.531-5.063a35.615 35.615 0 0 0 3.056-4.774l6.075 1.085a5.044 5.044 0 0 0 5.855-4.083l2.099-11.75a5.024 5.024 0 0 0-.829-3.774 5.023 5.023 0 0 0-3.254-2.083l-6.076-1.084a35.692 35.692 0 0 0-1.216-5.536l5.063-3.529a5.016 5.016 0 0 0 2.083-3.254 5.018 5.018 0 0 0-.829-3.771l-6.826-9.792a5.023 5.023 0 0 0-3.254-2.083 5.038 5.038 0 0 0-3.773.829l-5.064 3.529a35.54 35.54 0 0 0-4.773-3.056l1.085-6.075a5.058 5.058 0 0 0-4.083-5.857l-11.75-2.096c-2.74-.476-5.366 1.344-5.857 4.083l-1.084 6.075c-1.87.258-3.73.666-5.536 1.217l-3.529-5.063a5.056 5.056 0 0 0-7.027-1.255L40.9 43.969a5.054 5.054 0 0 0-1.254 7.025l3.531 5.064a35.402 35.402 0 0 0-3.056 4.774l-6.075-1.085a5.013 5.013 0 0 0-3.773.829 5.012 5.012 0 0 0-2.084 3.254l-2.096 11.75a5.057 5.057 0 0 0 4.083 5.857l6.075 1.084a35.588 35.588 0 0 0 1.217 5.534l-5.063 3.529a5.01 5.01 0 0 0-2.084 3.254 5.023 5.023 0 0 0 .829 3.773l6.826 9.792a5.023 5.023 0 0 0 3.254 2.083 4.984 4.984 0 0 0 3.773-.829l5.064-3.531a35.54 35.54 0 0 0 4.773 3.056l-1.085 6.075a5.054 5.054 0 0 0 4.083 5.855l11.75 2.099a5.053 5.053 0 0 0 5.855-4.083l1.085-6.075a35.714 35.714 0 0 0 5.536-1.217l3.529 5.063a5.023 5.023 0 0 0 3.254 2.083 4.998 4.998 0 0 0 3.773-.829l9.79-6.826a5.052 5.052 0 0 0 1.256-7.027zm-3.484 3.828-9.79 6.826a1.147 1.147 0 0 1-1.6-.284l-3.658-5.249c-.901-1.29-2.52-1.839-4.044-1.365a31.657 31.657 0 0 1-5.262 1.157 3.6 3.6 0 0 0-3.1 2.933l-1.123 6.296a1.148 1.148 0 0 1-1.331.93l-11.75-2.099a1.142 1.142 0 0 1-.928-1.331l1.122-6.293c.28-1.548-.48-3.086-1.889-3.827a31.601 31.601 0 0 1-4.541-2.909 3.652 3.652 0 0 0-2.22-.759 3.56 3.56 0 0 0-2.044.644l-5.247 3.658a1.15 1.15 0 0 1-1.599-.284l-6.826-9.792a1.143 1.143 0 0 1-.189-.858c.054-.303.223-.565.475-.741l5.247-3.658c1.287-.899 1.836-2.522 1.366-4.044a31.624 31.624 0 0 1-1.157-5.263 3.6 3.6 0 0 0-2.933-3.097l-6.294-1.122a1.152 1.152 0 0 1-.93-1.333l2.096-11.751c.053-.302.221-.564.473-.74a1.13 1.13 0 0 1 .858-.187l6.297 1.123a3.604 3.604 0 0 0 3.822-1.892 31.81 31.81 0 0 1 2.906-4.539 3.601 3.601 0 0 0 .117-4.268l-3.658-5.247a1.15 1.15 0 0 1 .286-1.599l9.79-6.826a1.148 1.148 0 0 1 1.599.286l3.658 5.249a3.594 3.594 0 0 0 4.044 1.365 31.625 31.625 0 0 1 5.265-1.157 3.6 3.6 0 0 0 3.097-2.933l1.123-6.296c.11-.625.719-1.056 1.331-.929l11.748 2.094c.624.113 1.041.71.93 1.333l-1.123 6.297a3.6 3.6 0 0 0 1.891 3.822 31.712 31.712 0 0 1 4.539 2.906c1.268.975 2.985 1.019 4.268.117l5.247-3.657a1.148 1.148 0 0 1 1.599.284l6.826 9.792a1.147 1.147 0 0 1-.284 1.598l-5.247 3.657a3.596 3.596 0 0 0-1.366 4.044 31.651 31.651 0 0 1 1.156 5.266c.209 1.577 1.388 2.822 2.935 3.097l6.296 1.123c.624.11 1.04.709.93 1.331l-2.097 11.75h-.001a1.156 1.156 0 0 1-1.331.929l-6.296-1.123a3.62 3.62 0 0 0-3.824 1.892 31.768 31.768 0 0 1-2.909 4.541 3.603 3.603 0 0 0-.114 4.265l3.658 5.246c.357.521.23 1.239-.29 1.601zM75.556 55.793c-12.066-2.148-23.604 5.905-25.752 17.955a22.038 22.038 0 0 0 3.642 16.594 22.053 22.053 0 0 0 14.311 9.159c1.312.233 2.62.347 3.909.347 10.546-.001 19.928-7.566 21.845-18.302a22.049 22.049 0 0 0-3.645-16.594 22.054 22.054 0 0 0-14.31-9.159zm14.116 25.068c-1.775 9.934-11.302 16.586-21.23 14.8a18.178 18.178 0 0 1-11.798-7.548 18.172 18.172 0 0 1-3.002-13.68c1.579-8.852 9.311-15.087 18.006-15.087 1.062 0 2.141.094 3.222.287 9.934 1.772 16.574 11.295 14.802 21.228zm83.543 50.753a4.243 4.243 0 0 0-2.759-1.765l-4.227-.754a27.16 27.16 0 0 0-.782-3.554l3.524-2.456a4.287 4.287 0 0 0 1.063-5.959l-5.136-7.365a4.249 4.249 0 0 0-2.759-1.766 4.24 4.24 0 0 0-3.198.703l-3.524 2.456a27.03 27.03 0 0 0-3.064-1.962l.753-4.225a4.245 4.245 0 0 0-.702-3.201 4.256 4.256 0 0 0-2.759-1.766l-8.837-1.574a4.203 4.203 0 0 0-3.201.702 4.244 4.244 0 0 0-1.766 2.759l-.753 4.227c-1.201.18-2.393.442-3.554.781l-2.456-3.524a4.258 4.258 0 0 0-2.761-1.765 4.234 4.234 0 0 0-3.198.703l-7.367 5.135a4.258 4.258 0 0 0-1.765 2.761 4.242 4.242 0 0 0 .703 3.198l2.456 3.524a27.358 27.358 0 0 0-1.962 3.062l-4.228-.754c-2.31-.404-4.547 1.139-4.965 3.462l-1.574 8.838a4.248 4.248 0 0 0 .701 3.201 4.251 4.251 0 0 0 2.759 1.765l4.227.754c.18 1.199.442 2.392.781 3.554l-3.522 2.456a4.249 4.249 0 0 0-1.766 2.759 4.246 4.246 0 0 0 .703 3.199l5.135 7.367a4.286 4.286 0 0 0 5.959 1.063l3.524-2.456a27.046 27.046 0 0 0 3.062 1.961l-.754 4.228a4.263 4.263 0 0 0 .703 3.199 4.243 4.243 0 0 0 2.759 1.765l8.841 1.579a4.29 4.29 0 0 0 4.963-3.462l.754-4.227a27.267 27.267 0 0 0 3.554-.782l2.456 3.522a4.287 4.287 0 0 0 5.958 1.065l7.365-5.136a4.25 4.25 0 0 0 1.766-2.758 4.253 4.253 0 0 0-.702-3.2l-2.456-3.524a27.03 27.03 0 0 0 1.962-3.064l4.224.753a4.224 4.224 0 0 0 3.201-.701 4.243 4.243 0 0 0 1.766-2.761l1.577-8.838a4.253 4.253 0 0 0-.702-3.202zm-4.712 11.353-.442.309-4.739-.846a3.204 3.204 0 0 0-3.387 1.675 23.13 23.13 0 0 1-2.14 3.343 3.184 3.184 0 0 0-.101 3.781l2.752 3.947a.38.38 0 0 1-.095.53l-7.365 5.136c-.145.101-.426.051-.53-.095l-2.753-3.95a3.195 3.195 0 0 0-3.579-1.21c-1.27.394-2.576.681-3.881.852a3.189 3.189 0 0 0-2.743 2.601l-.844 4.735a.393.393 0 0 1-.442.31l-8.841-1.579c-.176-.031-.338-.265-.308-.441l.845-4.735a3.185 3.185 0 0 0-1.674-3.39 23.148 23.148 0 0 1-3.343-2.143 3.229 3.229 0 0 0-1.965-.672c-.634 0-1.268.19-1.815.573l-3.947 2.752a.386.386 0 0 1-.532-.095l-5.135-7.367c-.103-.146-.054-.426.094-.529l3.947-2.752a3.19 3.19 0 0 0 1.214-3.582 23.292 23.292 0 0 1-.852-3.88 3.191 3.191 0 0 0-2.601-2.743l-4.735-.844c-.177-.032-.341-.265-.309-.442l1.574-8.838c.038-.208.236-.332.442-.31l4.735.845a3.206 3.206 0 0 0 3.39-1.672 23.46 23.46 0 0 1 2.147-3.349 3.19 3.19 0 0 0 .097-3.776l-2.752-3.948a.381.381 0 0 1 .094-.53l7.367-5.135a.384.384 0 0 1 .53.094l2.752 3.947a3.19 3.19 0 0 0 3.582 1.214 23.194 23.194 0 0 1 3.881-.852 3.192 3.192 0 0 0 2.74-2.601l.845-4.736.442-.308 8.837 1.574c.177.032.341.265.309.442l-.845 4.741a3.195 3.195 0 0 0 1.675 3.387 23.244 23.244 0 0 1 3.346 2.141 3.184 3.184 0 0 0 3.778.1l3.948-2.752c.146-.104.425-.053.529.094l5.136 7.365a.385.385 0 0 1-.095.532l-3.95 2.753a3.192 3.192 0 0 0-1.21 3.579c.394 1.268.681 2.575.852 3.882a3.195 3.195 0 0 0 2.601 2.742l4.738.845c.176.031.338.265.308.441l-1.577 8.84zm-26.568-25.307a15.661 15.661 0 0 0-11.781 2.586 15.659 15.659 0 0 0-6.501 10.159 15.652 15.652 0 0 0 2.586 11.781 15.661 15.661 0 0 0 10.159 6.501c.936.165 1.872.249 2.803.249a15.65 15.65 0 0 0 8.977-2.835 15.656 15.656 0 0 0 6.5-10.159 15.652 15.652 0 0 0-2.585-11.781 15.652 15.652 0 0 0-10.158-6.501zm8.906 17.596a11.771 11.771 0 0 1-4.891 7.646 11.808 11.808 0 0 1-8.865 1.946v-.001a11.771 11.771 0 0 1-7.646-4.891 11.781 11.781 0 0 1-1.948-8.865 11.79 11.79 0 0 1 4.893-7.646 11.774 11.774 0 0 1 6.757-2.135c.7 0 1.406.063 2.109.187a11.79 11.79 0 0 1 7.646 4.893 11.78 11.78 0 0 1 1.945 8.866z"
+											fill="#2d2727"
+											data-color="1"
+										></path>
+									</g>
+								</svg>
+								<h3 class="cards-services-cotac__title text">
+									CIVIL ENGINEERING
+								</h3>
+								<p class="cards-services-cotac__text text">
+									Describe the service and how customers or clients can benefit
+									from it. It’s an opportunity to add a short description with
+									relevant details, like pricing, duration and how to book.
+								</p>
+							</li>
+							<!-- 7 -->
+							<li class="cards-services-cotac__item">
+								<svg
+									preserveAspectRatio="xMidYMid meet"
+									data-bbox="30.601 43.043 138.86 113.915"
+									viewBox="30.601 43.043 138.86 113.915"
+									height="44"
+									width="44"
+									xmlns="http://www.w3.org/2000/svg"
+									data-type="color"
+									role="presentation"
+									aria-hidden="true"
+									aria-label=""
+									class="cards-services-cotac__icon"
+								>
+									<defs>
+										<style>
+											#comp-lj5dfs4c__item-lj5dddiz svg [data-color="1"] {
+												fill: #2d2727;
+											}
+										</style>
+									</defs>
+									<g>
+										<path
+											d="M147.507 113.053c-2.835 0-5.537.558-8.026 1.541l-2.187-4.375 31.765-41.539a1.948 1.948 0 0 0-1.548-3.134H57.854l-3.406-12c-1.756-6.185-7.473-10.503-13.904-10.503h-8.055a1.95 1.95 0 0 0 0 3.898h8.055c4.695 0 8.871 3.155 10.152 7.67l27.615 97.296c.018.059.037.117.059.173.877 2.882 3.575 4.878 6.628 4.878a6.97 6.97 0 0 0 6.186-3.787c.023-.041.047-.083.067-.127l19.97-41.093h22.578l2.199 4.397c-6.254 3.873-10.442 10.776-10.442 18.658 0 12.104 9.847 21.952 21.952 21.952 12.106 0 21.953-9.847 21.953-21.952-.001-12.105-9.848-21.953-21.954-21.953zm16.059-43.609-29.523 38.607H69.918L58.96 69.444h104.606zm-75.462 81.155c-.059.088-.11.18-.154.278l-.212.467a3.041 3.041 0 0 1-2.74 1.715c-1.366 0-2.567-.902-2.92-2.192a1.97 1.97 0 0 0-.059-.179L71.024 111.95h35.862l-18.782 38.649zm59.403 2.46c-9.954 0-18.053-8.099-18.053-18.053 0-6.358 3.311-11.947 8.291-15.164l8.018 16.036a1.95 1.95 0 0 0 3.489-1.743l-8.018-16.036a17.928 17.928 0 0 1 6.274-1.147c9.956 0 18.055 8.099 18.055 18.055-.001 9.954-8.1 18.052-18.056 18.052z"
+											fill="#2d2727"
+											data-color="1"
+										></path>
+									</g>
+								</svg>
+								<h3 class="cards-services-cotac__title text">
+									LANDSCAPE CONSTRUCTION
+								</h3>
+								<p class="cards-services-cotac__text text">
+									Describe the service and how customers or clients can benefit
+									from it. It’s an opportunity to add a short description with
+									relevant details, like pricing, duration and how to book.
+								</p>
+							</li>
+							<!-- 8 -->
+							<li class="cards-services-cotac__item">
+								<svg
+									preserveAspectRatio="xMidYMid meet"
+									data-bbox="19.661 25.245 160.678 149.572"
+									viewBox="19.661 25.245 160.678 149.572"
+									height="44"
+									width="44"
+									xmlns="http://www.w3.org/2000/svg"
+									data-type="color"
+									role="presentation"
+									aria-hidden="true"
+									aria-label=""
+									class="cards-services-cotac__icon"
+								>
+									<defs>
+										<style>
+											#comp-lj5dfs4c__item-lj5ddehh svg [data-color="1"] {
+												fill: #2d2727;
+											}
+										</style>
+									</defs>
+									<g>
+										<path
+											d="M167.927 91.433A1.949 1.949 0 0 0 166 89.778H34.002c-.964 0-1.782.703-1.927 1.655l-12.391 81.14a1.948 1.948 0 0 0 1.927 2.244H178.39a1.948 1.948 0 0 0 1.927-2.244l-12.39-81.14zm-92.679 52.439 1.403-27.278h45.538l1.964 27.278H75.248zm49.185 3.898 1.666 23.148H73.857l1.19-23.148h49.386zm-92.257-31.176h40.571l-1.403 27.278H28.011l4.165-27.278zm44.675-3.899.978-19.018h42.71l1.369 19.018H76.851zm49.248 3.899h41.726l4.165 27.278h-43.928l-1.963-27.278zm41.131-3.899h-41.412l-1.369-19.018h39.877l2.904 19.018zM35.676 93.677h38.25l-.978 19.018H32.772l2.904-19.018zm-8.261 54.093h43.729l-1.19 23.148H23.88l3.535-23.148zm102.595 23.148-1.666-23.148h44.242l3.534 23.148h-46.11zM100 71.98c10.082 0 18.284-8.203 18.284-18.284S110.082 35.413 100 35.413s-18.283 8.201-18.283 18.283S89.918 71.98 100 71.98zm0-32.669c7.932 0 14.386 6.453 14.386 14.384S107.932 68.082 100 68.082s-14.384-6.454-14.384-14.386S92.068 39.311 100 39.311zm-1.949-7.136v-5.042a1.95 1.95 0 0 1 3.898 0v5.042a1.95 1.95 0 0 1-3.898 0zM79.84 36.291a1.947 1.947 0 0 1 0-2.756 1.947 1.947 0 0 1 2.756 0L86.16 37.1a1.947 1.947 0 0 1-1.378 3.327c-.499 0-.997-.19-1.378-.571l-3.564-3.565zm-8.353 17.405a1.95 1.95 0 0 1 1.949-1.949h5.042a1.95 1.95 0 0 1 0 3.898h-5.042a1.95 1.95 0 0 1-1.949-1.949zM86.16 67.537a1.947 1.947 0 0 1 0 2.756l-3.565 3.565a1.941 1.941 0 0 1-1.378.571 1.947 1.947 0 0 1-1.378-3.327l3.565-3.565a1.947 1.947 0 0 1 2.756 0zM100 73.269a1.95 1.95 0 0 1 1.949 1.949v5.041a1.95 1.95 0 0 1-3.898 0v-5.041A1.95 1.95 0 0 1 100 73.269zm16.596-5.732 3.566 3.563a1.95 1.95 0 1 1-2.756 2.758l-3.566-3.563a1.95 1.95 0 1 1 2.756-2.758zm4.926-15.791h5.041a1.95 1.95 0 0 1 0 3.898h-5.041a1.95 1.95 0 0 1 0-3.898zm-7.682-11.89a1.95 1.95 0 0 1 0-2.758l3.566-3.563a1.95 1.95 0 1 1 2.756 2.758l-3.566 3.563c-.381.381-.879.571-1.378.571s-.999-.19-1.378-.571z"
+											fill="#2d2727"
+											data-color="1"
+										></path>
+									</g>
+								</svg>
+								<h3 class="cards-services-cotac__title text">
+									SUSTAINABLE AND ECOLOGIC
+								</h3>
+								<p class="cards-services-cotac__text text">
+									Describe the service and how customers or clients can benefit
+									from it. It’s an opportunity to add a short description with
+									relevant details, like pricing, duration and how to book.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page__slider-serv slider-serv">
+				<div class="slider-serv__container">
+					<div class="slider-serv-cover swiper">
+						<div class="slider-serv__wrapper swiper-wrapper">
+							<!-- 1 -->
+							<div class="slider-serv__slide swiper-slide">
+								<div class="slide__img-wrap">
+									<img src="./img/servizi/01.jpg" alt="" />
+									<div class="slide__description">
+										<h3 class="slide-desc__title"></h3>
+										<p class="slide-desc__text"></p>
+									</div>
+								</div>
+								<div class="slide__group">
+									<div class="slide__img-wrap">
+										<img src="./img/servizi/02.jpeg" alt="" />
+										<div class="slide__description">
+											<h3 class="slide-desc__title"></h3>
+											<p class="slide-desc__text"></p>
+										</div>
+									</div>
+									<div class="slide__img-wrap">
+										<img src="./img/servizi/03.jpeg" alt="" />
+										<div class="slide__description">
+											<h3 class="slide-desc__title"></h3>
+											<p class="slide-desc__text"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 2 -->
+							<div class="slider-serv__slide slide-reverse swiper-slide">
+								<div class="slide__img-wrap">
+									<img src="./img/servizi/06.jpg" alt="" />
+									<div class="slide__description">
+										<h3 class="slide-desc__title"></h3>
+										<p class="slide-desc__text"></p>
+									</div>
+								</div>
+								<div class="slide__group">
+									<div class="slide__img-wrap">
+										<img src="./img/servizi/04.jpeg" alt="" />
+										<div class="slide__description">
+											<h3 class="slide-desc__title"></h3>
+											<p class="slide-desc__text"></p>
+										</div>
+									</div>
+									<div class="slide__img-wrap">
+										<img src="./img/servizi/05.jpg" alt="" />
+										<div class="slide__description">
+											<h3 class="slide-desc__title"></h3>
+											<p class="slide-desc__text"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 3 -->
+							<div class="slider-serv__slide swiper-slide">
+								<div class="slide__img-wrap">
+									<img src="./img/servizi/07.jpg" alt="" />
+									<div class="slide__description">
+										<h3 class="slide-desc__title"></h3>
+										<p class="slide-desc__text"></p>
+									</div>
+								</div>
+								<div class="slide__group">
+									<div class="slide__img-wrap">
+										<img src="./img/servizi/08.jpg" alt="" />
+										<div class="slide__description">
+											<h3 class="slide-desc__title"></h3>
+											<p class="slide-desc__text"></p>
+										</div>
+									</div>
+									<div class="slide__img-wrap">
+										<img src="./img/servizi/09.webp" alt="" />
+										<div class="slide__description">
+											<h3 class="slide-desc__title">Image Title</h3>
+											<p class="slide-desc__text">Describe your image</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 4 -->
+							<div class="slider-serv__slide slide-reverse swiper-slide">
+								<div class="slide__img-wrap">
+									<img src="./img/servizi/12.jpg" alt="" />
+									<div class="slide__description">
+										<h3 class="slide-desc__title">Image Title</h3>
+										<p class="slide-desc__text">Describe your image</p>
+									</div>
+								</div>
+								<div class="slide__group">
+									<div class="slide__img-wrap">
+										<img src="./img/servizi/10.webp" alt="" />
+										<div class="slide__description">
+											<h3 class="slide-desc__title">Image Title</h3>
+											<p class="slide-desc__text">Describe your image</p>
+										</div>
+									</div>
+									<div class="slide__img-wrap">
+										<img src="./img/servizi/11.webp" alt="" />
+										<div class="slide__description">
+											<h3 class="slide-desc__title">Image Title</h3>
+											<p class="slide-desc__text">Describe your image</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next slider-serv-next"></div>
+						<div class="swiper-button-prev slider-serv-prev"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<h3 class="footer__title">OBE Builders</h3>
+					<nav class="footer__nav menu-footer">
+						<div class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="./index.html" class="menu-footer__link">HOME</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="./chi-siamo.html" class="menu-footer__link"
+										>CHI SIAMO</a
+									>
+								</li>
+								<li class="menu-footer__item">
+									<a
+										href="./servici.html"
+										class="menu-footer__link active__page"
+										>SERVIZI</a
+									>
+								</li>
+								<li class="menu-footer__item">
+									<a href="./sostenibilita.html" class="menu-footer__link"
+										>SOSTENIBILITA'</a
+									>
+								</li>
+								<li class="menu-footer__item">
+									<a href="./servici.html#contattaci" class="menu-footer__link"
+										>CONTATTACI</a
+									>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<ul class="contacts-footer__socials socials-contacts">
+						<li class="social-contacts__item">
+							<a href="" class="social-contacts__link">
+								<svg class="social-icon" height="34" width="34">
+									<use href="./img/icons/symbol-defs.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-contacts__item">
+							<a href="" class="social-contacts__link">
+								<svg class="social-icon" height="34" width="34">
+									<use href="./img/icons/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-contacts__item">
+							<a href="" class="social-contacts__link">
+								<svg class="social-icon" height="34" width="34">
+									<use href="./img/icons/symbol-defs.svg#icon-x"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-contacts__item">
+							<a href="" class="social-contacts__link">
+								<svg class="social-icon" height="34" width="34">
+									<use href="./img/icons/symbol-defs.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-contacts__item">
+							<a href="" class="social-contacts__link">
+								<svg class="social-icon" height="34" width="34">
+									<use href="./img/icons/symbol-defs.svg#icon-youtube"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-contacts__item">
+							<a href="" class="social-contacts__link">
+								<svg class="social-icon" height="34" width="34">
+									<use href="./img/icons/symbol-defs.svg#icon-tiktok"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<h4 class="contacts-footer__title">HEAD OFFICE</h4>
+					<address class="contacts-footer__address address-contacts">
+						<ul class="address-contacts__list">
+							<li class="address-contacts__item">
+								<a href="" class="address-contacts__link"
+									>500 Terry Francine St, San Francisco, CA 94158</a
+								>
+							</li>
+							<li class="address-contacts__item">
+								<a href="tel:1234567890" class="address-contacts__link"
+									>123-456-7890</a
+								>
+							</li>
+							<li class="address-contacts__item">
+								<a href="maleto:info@mysite.com" class="address-contacts__link"
+									>info@mysite.com</a
+								>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/servici.js"></script>
+	</body>
 </html>
