@@ -485,6 +485,13 @@ body {
 	opacity: 1;
 }
 
+@media (min-width: 425px) and (max-width: 530px) {
+	.item-gallery__description p {
+		width: 80%;
+		text-align: left;
+	}
+}
+
 @media (max-width: 424.98px) {
 	.slider-project__image {
 		height: 300px;
