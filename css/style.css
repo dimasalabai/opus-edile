@@ -37,6 +37,12 @@ body {
 	color: #ff5200;
 }
 
+/* .animated {
+	transform: translate(0, 120%);
+	opacity: 0;
+	transition: all 0.6s ease 0s;
+} */
+
 /* ----Header------------ */
 .header {
 	position: fixed;
